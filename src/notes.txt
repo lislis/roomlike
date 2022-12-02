@@ -1,4 +1,8 @@
-        matches, candles
+matches, candles
 diary
 tea
 blanket
+Britney CD
+newspaper, letter
+wallet
+doll

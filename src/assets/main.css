@@ -1,35 +1,101 @@
-@import './base.css';
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-
-  font-weight: normal;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: lightgrey;
+  font-family: sans-serif;
+  line-height: 1.5;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
+button {
+  background: steelblue;
+  color: #eee;
+  font: inherit;
+  border: none;
+  padding: .2em .5em .1em;
+  border-radius: 2px;
+  cursor: pointer;
+  box-shadow: #666 2px 2px 3px 2px;
+  transition: box-shadow 200ms ease;
+}
+button:hover {
+  box-shadow: #666 0px 0px 1px 1px
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+label {
+  display: block;
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+main {
+  display: flex;
+  flex-flow: row nowrap;
+}
+main > div {
+  flex: 1 1 30%;
+  padding: 0 2em;
+  border-right: 2px currentColor dotted;
+}
+input,
+textarea {
+  display: block;
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+  border-radius: 2px;
+  font: inherit;
+  border: none;
+  padding: 0.3em;
+  margin-bottom: 2em;
+}
+
+textarea {
+  height: 10em;
+}
+
+.blocky {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  margin-right: 0.2em;
+  background-color: black;
+}
+
+.room {
+  background-color: lightgrey;
+  padding: 1em;
+  border: 2px solid currentColor;
+}
+
+.item {
+  display: inline-block;
+  cursor: pointer;
+  padding: 0.2em;
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
+  background-color: grey;
+}
+.item:hover {
+  background-color: white;
+}
+
+.item.green {
+  background-color: lightgreen
+}
+.item.yellow {
+  background-color: gold
+}
+
+.blockies {
+  display: flex;
+  align-items: center;
+}
+.blockies p {
+  margin-right: 0.3em;
+}
+
+.try-blocky {
+  margin-right: 0.2em;
+  background-color: white;
+}
+
+
+.room {
+  background-color: lightblue;
 }
