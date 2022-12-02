@@ -1,0 +1,4 @@
+        matches, candles
+diary
+tea
+blanket
